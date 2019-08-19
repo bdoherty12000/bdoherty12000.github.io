@@ -1,0 +1,1 @@
+(function(){const pages=[{"idx":0,"href":"/","title":"Hugo Book","content":""}];window.bookSearch={pages:pages,idx:lunr(function(){this.ref("idx");this.field("title");this.field("content");pages.forEach(this.add,this);}),}})();
