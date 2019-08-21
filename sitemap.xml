@@ -3,8 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://example.com/docs/page-one/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/page-two/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/post-one/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/post-two/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/</loc>
+    <lastmod>2019-08-21T21:32:21+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://example.com/</loc>
     <lastmod>2019-08-20T22:12:19+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/posts/</loc>
   </url>
   
 </urlset>
