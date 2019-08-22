@@ -33,7 +33,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://example.com/docs/page-one/</guid>
-      <description>Introduction Python Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3. This tutorial uses Python 3 because it is the most up-to-date and supports newer features. For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be invoked with parentheses.</description>
+      <description>Introduction Python Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3. This tutorial uses Python 3 because it is the most up-to-date and supports newer features. For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be invoked with parentheses and also includes a newline, unlike in C.</description>
     </item>
     
   </channel>
