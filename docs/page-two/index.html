@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
 
 
-<script defer src="/search.min.18a7ffbfaa69b4860fea1c7e016e2d8d9651638f4a4436c37f14f131a6574620.js"></script>
+<script defer src="/search.min.cd31171ca1e6e5a4f433fb3133ca77dc0b21315de4ed4f10c1e7c81d950dc3eb.js"></script>
 
 
 
@@ -101,8 +101,10 @@ https://github.com/alex-shpak/hugo-book
 
 <h1 id="variables-and-types">Variables and Types</h1>
 
-<p>You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive.
-This tutorial will go over a few basic types of variables.</p>
+<p>Variables are reserved memory locations used to store values. Python has several basic data types that
+behave in ways that are similar to other programming languages. You do not need to declare variables
+before using them or declare their type. Every variable in Python is an object. Variables can hold any value
+and are case-sensitive. This tutorial will go over a few basic types of variables.</p>
 
 <h2 id="variable-names">Variable Names</h2>
 
@@ -114,25 +116,83 @@ This tutorial will go over a few basic types of variables.</p>
 <li>Reserved words cannot be used in variable names</li>
 </ol>
 
+<h2 id="variable-assignment">Variable Assignment</h2>
+
+<p>The equals sign = is used to assign values to variables</p>
+
+<pre><code>count = 100         # Assigning an integer value
+name = &quot;Pat&quot;        # A string
+measure = 100.0     # A floating point value
+</code></pre>
+
 <h2 id="numbers">Numbers</h2>
 
-<p>Python supports integer and floating-point numbers. To define an integer, use the following syntax:</p>
+<p>Python supports four different numerical types:</p>
+
+<pre><code>int (signed integers)
+long (long integers)
+float (floating point numbers)
+complex (complex numbers)
+</code></pre>
+
+<p>To define an integer, use the following syntax:</p>
 
 <pre><code>myinteger = 7 
-print(myinteger)
+</code></pre>
+
+<h2 id="booleans">Booleans</h2>
+
+<p>Python implements all the usual operators associated with Boolean logic, but uses words rather than
+symbols
+    t= True
+    f = False</p>
+
+<pre><code>t and f # Logical AND
+t or f # Logical OR
+not f # Logical NOT
 </code></pre>
 
 <h2 id="strings">Strings</h2>
 
+<p>A string is a sequence of characters. Strings are created by enclosing a sequence of characters
+in single or double quotes. Strings are immutable i.e. they cannot be changed once they&rsquo;ve been created.
+They can, however, have characters or other strings added to them.</p>
+
+<p>Subsets of strings can be extracted using the slice operator []. String indices start at 0 to string length - 1.</p>
+
+<pre><code>str[0]       # Selects first character of the string
+str[2:5]     # Selects characters from the 3rd to the 5th
+str[2:]      # Selects characters from the 3rd until the end    
+str + &quot;TEST&quot; # Concatenates two strings
+</code></pre>
+
 <h2 id="lists">Lists</h2>
+
+<p>Lists are created using square brackets.</p>
+
+<pre><code>myList = ['apple', 'orange', 'pear']
+</code></pre>
 
 <h2 id="tuples">Tuples</h2>
 
+<p>Tuples are created using parentheses.</p>
+
+<pre><code>myTuple = (1, 2, 3)
+</code></pre>
+
 <h2 id="dictionaries">Dictionaries</h2>
+
+<p>Dictionaries are made up of a key and a value. They are created as follows:</p>
+
+<pre><code>myDict = {'Tom':4, 'Pat': 4, 'John': 7}
+</code></pre>
 
 <h2 id="sets">Sets</h2>
 
 <h2 id="comments">Comments</h2>
+
+<p>The hash symbol # comments out a single line.
+&ldquo;&rdquo;&ldquo;Triple quotes allow multiple lines to be commented out. These are also known as docstrings. &ldquo;&rdquo;&rdquo;</p>
 </article>
 
       
@@ -167,7 +227,9 @@ print(myinteger)
 <li><a href="#variables-and-types">Variables and Types</a>
 <ul>
 <li><a href="#variable-names">Variable Names</a></li>
+<li><a href="#variable-assignment">Variable Assignment</a></li>
 <li><a href="#numbers">Numbers</a></li>
+<li><a href="#booleans">Booleans</a></li>
 <li><a href="#strings">Strings</a></li>
 <li><a href="#lists">Lists</a></li>
 <li><a href="#tuples">Tuples</a></li>

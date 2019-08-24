@@ -19,6 +19,15 @@
     </item>
     
     <item>
+      <title></title>
+      <link>https://example.com/posts/post-two/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/post-two/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Introduction</title>
       <link>https://example.com/docs/page-one/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -33,20 +42,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://example.com/docs/page-two/</guid>
-      <description>Variables and Types You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.
-Variable Names There are a number of rules governing the naming of variables:
- Variable names cannot start with a number There can�t be any spaces in a variable name Reserved words cannot be used in variable names  Numbers Python supports integer and floating-point numbers.</description>
-    </item>
-    
-    <item>
-      <title>Variables and Types</title>
-      <link>https://example.com/posts/post-two/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/post-two/</guid>
-      <description>Variables and Types You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.
-Variable Names There are a number of rules governing the naming of variables:
-1. Variable names cannot start with a number 2. There can�t be any spaces in a variable name 3.</description>
+      <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
     </item>
     
   </channel>
