@@ -36,5 +36,23 @@
       <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
     </item>
     
+    <item>
+      <title>Variables and Types</title>
+      <link>https://example.com/docs/python-loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-loop/</guid>
+      <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
+    </item>
+    
+    <item>
+      <title>Variables and Types</title>
+      <link>https://example.com/docs/python-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-operators/</guid>
+      <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
+    </item>
+    
   </channel>
 </rss>
