@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Posts | Hugo Book</title>
+<title>Introduction | Hugo Book</title>
 
 
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
@@ -17,7 +17,6 @@
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 
 
-<link rel="alternate" type="application/rss+xml" href="https://example.com/posts/index.xml" title="Hugo Book" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -29,6 +28,7 @@ https://github.com/alex-shpak/hugo-book
 <body>
   <input type="checkbox" style="display: none" id="menu-control" />
   <main class="flex container">
+
     <aside class="book-menu fixed">
       <nav>
 <h2 class="book-brand">
@@ -52,7 +52,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2fposts\2f "] {
+  nav ul a[href$="\2f docs\2fintroduction-to-python\2f "] {
       color: #004ed0;
   }
   </style>
@@ -88,48 +88,76 @@ https://github.com/alex-shpak/hugo-book
 
     </aside>
 
-    <div class="book-posts">
+    <div class="book-page">
       <header class="flex align-center justify-between book-header">
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Posts</strong>
+  <strong>Introduction</strong>
 </header>
 
       
-  
-  
-  
-  <article class="markdown">
-    <h2>
-      <a href="/posts/post-one/"></a>
-    </h2>
-    <h5>
-      <strong>Jan 1, 0001</strong>
-    </h5>
-    <p>
-    </p>
-  </article>
-  
-  <article class="markdown">
-    <h2>
-      <a href="/posts/post-two/"></a>
-    </h2>
-    <h5>
-      <strong>Jan 1, 0001</strong>
-    </h5>
-    <p>
-    </p>
-  </article>
-  
-  
+<article class="markdown">
 
+<h1 id="introduction">Introduction</h1>
+
+<h2 id="python">Python</h2>
+
+<p>Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3.
+This tutorial uses Python 3 because it is the most up-to-date and supports newer features.
+For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not
+a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be
+invoked with parentheses and also includes a newline, unlike in C. To print a string in Python 3, just write:</p>
+
+<pre><code>print(&quot;Hello World&quot;)
+</code></pre>
+
+<h2 id="indentation">Indentation</h2>
+
+<p>Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard
+indentation requires standard Python code to use four spaces. For example:</p>
+
+<pre><code>x = 1
+if x == 1:      
+    print(&quot;x is 1.&quot;) # indented four spaces
+</code></pre>
+</article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs%5cintroduction-to-python.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
 
 
       
     </div>
-  </main>
 
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a>
+<ul>
+<li><a href="#python">Python</a></li>
+<li><a href="#indentation">Indentation</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
   
   
 </body>

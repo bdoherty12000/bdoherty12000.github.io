@@ -23,17 +23,11 @@
   </url>
   
   <url>
-    <loc>https://example.com/docs/page-one/</loc>
-    <lastmod>2019-08-24T13:50:59+01:00</lastmod>
+    <loc>https://example.com/docs/introduction-to-python/</loc>
   </url>
   
   <url>
     <loc>https://example.com/posts/</loc>
-  </url>
-  
-  <url>
-    <loc>https://example.com/docs/page-two/</loc>
-    <lastmod>2019-08-24T13:50:59+01:00</lastmod>
   </url>
   
   <url>
@@ -44,6 +38,10 @@
   <url>
     <loc>https://example.com/docs/python-operators/</loc>
     <lastmod>2019-08-24T13:50:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/python-variables-types/</loc>
   </url>
   
 </urlset>

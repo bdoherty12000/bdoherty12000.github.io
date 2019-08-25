@@ -52,7 +52,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2fpython-loop\2f "] {
+  nav ul a[href$="\2f docs\2fpython-variables-types\2f "] {
       color: #004ed0;
   }
   </style>
@@ -108,12 +108,14 @@ and are case-sensitive. This tutorial will go over a few basic types of variable
 
 <h2 id="variable-names-in-python">Variable Names in Python</h2>
 
-<p>There are a number of rules governing the naming of variables:</p>
+<p>There are a few rules governing the naming of variables:</p>
 
 <ol>
-<li>Variable names cannot start with a number</li>
-<li>There cannot be any spaces in a variable name</li>
-<li>Reserved words cannot be used in variable names</li>
+<li>Variables can only contain letters, numbers, and underscores. Variable names can start
+with a letter or an underscore, but cannot start with a number.</li>
+<li>Reserved words or <a href="http://www.luasoftware.com" target="_blank">Lua Software</a> Python keywords cannot be used as variable names.</li>
+<li>There cannot be any spaces in a variable name. Spaces are not allowed in variable names,
+so we use underscores instead of spaces. For example, use car_wheel instead of &ldquo;car wheel&rdquo;.</li>
 </ol>
 
 <h2 id="variable-assignment">Variable Assignment</h2>
@@ -153,9 +155,12 @@ complex (complex numbers)
 
 <h2 id="python-strings">Python Strings</h2>
 
-<p>A string is a sequence of characters. Strings are created by enclosing a sequence of characters
-in single or double quotes. Strings are immutable i.e. they cannot be changed once they&rsquo;ve been created.
-They can, however, have characters or other strings added to them.</p>
+<p>Strings are created by enclosing a sequence of characters in single or double quotes.
+Strings are immutable i.e. they cannot be changed once they&rsquo;ve been created.
+They can, however, have characters or other strings added to them. Creating strings is straightforward:</p>
+
+<pre><code>myString = 'Hello World!'
+</code></pre>
 
 <p>Subsets of strings can be extracted using the slice operator []. String indices start at 0 to string length - 1.</p>
 
@@ -213,18 +218,11 @@ not f     # Logical NOT
 </article>
 
       
-<div class="book-footer justify-between">
-  
-  <div>
-    
-    <a href="https://github.com/alex-shpak/hugo-book/commit/b930b6cb8cff7d78d43ec176b37669a8c617a3ec" title='Last modified Aug 24, 2019 by bdoherty' target="_blank" rel="noopener">
-      <img src="/svg/calendar.svg" alt="Changed" /> Aug 24, 2019
-    </a>
-  </div>
+<div class="book-footer justify-end">
   
   
   <div>
-    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs%5cpython-loop.md" target="_blank" rel="noopener">
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs%5cpython-variables-types.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
