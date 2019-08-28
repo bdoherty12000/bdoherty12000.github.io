@@ -15,7 +15,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid></guid>
-      <description> Python  Hello World Variables and Types  Blog  </description>
+      <description> Python  Hello World Variables and Types Operators []  Blog  </description>
     </item>
     
     <item>
@@ -24,7 +24,71 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://example.com/docs/introduction-to-python/</guid>
+      <description>Introduction What can Python do?  Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.  Python Python is a simple language with straightforward syntax.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Python</title>
+      <link>https://example.com/docs/python-get-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-get-started/</guid>
       <description>Introduction Python Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3. This tutorial uses Python 3 because it is the most up-to-date and supports newer features. For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be invoked with parentheses and also includes a newline, unlike in C.</description>
+    </item>
+    
+    <item>
+      <title>Python Functions</title>
+      <link>https://example.com/docs/python-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-functions/</guid>
+      <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
+Functions There are a number of rules governing the naming of variables:
+ Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+    </item>
+    
+    <item>
+      <title>Python Functions</title>
+      <link>https://example.com/docs/python-numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-numbers/</guid>
+      <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
+Functions There are a number of rules governing the naming of variables:
+ Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+    </item>
+    
+    <item>
+      <title>Python Functions</title>
+      <link>https://example.com/docs/python-syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-syntax/</guid>
+      <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
+Functions There are a number of rules governing the naming of variables:
+ Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+    </item>
+    
+    <item>
+      <title>Python Lists</title>
+      <link>https://example.com/docs/python-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-lists/</guid>
+      <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
+What are lists? There are a number of rules governing the naming of variables:
+ Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+    </item>
+    
+    <item>
+      <title>Python Lists</title>
+      <link>https://example.com/docs/python-numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/python-numpy/</guid>
+      <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
+What are lists? There are a number of rules governing the naming of variables:
+ Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
     </item>
     
     <item>

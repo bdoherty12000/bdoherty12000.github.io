@@ -22,7 +22,31 @@
   </url>
   
   <url>
+    <loc>https://example.com/docs/python-get-started/</loc>
+  </url>
+  
+  <url>
     <loc>https://example.com/posts/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/python-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/python-numbers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/python-syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/python-lists/</loc>
+  </url>
+  
+  <url>
+    <loc>https://example.com/docs/python-numpy/</loc>
   </url>
   
   <url>

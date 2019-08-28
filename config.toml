@@ -4,6 +4,7 @@ baseURL = 'https://www.thedatafaculty.com/'
 title = 'The Data Faculty'
 theme = 'hugo-book'
 disableKinds = ['taxonomy', 'taxonomyTerm']
+googleAnalytics = "UA-145397209-1"
 # themesDir = '../..'
 
 # Book configuration
@@ -38,7 +39,7 @@ pygmentsCodeFences = true
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to 'content' directory of repo.
-  BookEditPath = 'edit/master/exampleSite/content'
+  # BookEditPath = 'edit/master/exampleSite/content'
 
   # Configure the date format used on the pages
   # - In git information
