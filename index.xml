@@ -73,6 +73,15 @@ Follow the following steps:
     </item>
     
     <item>
+      <title>About Us</title>
+      <link>https://www.thedatafaculty.com/home/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedatafaculty.com/home/about/</guid>
+      <description>About Us Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.</description>
+    </item>
+    
+    <item>
       <title>Introduction to Python</title>
       <link>https://www.thedatafaculty.com/docs/introduction-to-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -143,17 +152,6 @@ Create a list myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &
       <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
 What are lists? There are a number of rules governing the naming of variables:
  Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
-    </item>
-    
-    <item>
-      <title>Python Lists</title>
-      <link>https://www.thedatafaculty.com/home/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.thedatafaculty.com/home/about/</guid>
-      <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
-What are lists? A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
-Create a list myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;orange&amp;quot;] # Assigning an integer value  Accessing List Items Accessing a Range of List Items Change Item Values Copying a List myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;] newList = myList.</description>
     </item>
     
     <item>
