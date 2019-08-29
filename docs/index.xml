@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docs on Hugo Book</title>
-    <link>https://example.com/docs/</link>
-    <description>Recent content in Docs on Hugo Book</description>
+    <title>Docs on The Data Faculty</title>
+    <link>https://www.thedatafaculty.com/docs/</link>
+    <description>Recent content in Docs on The Data Faculty</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://example.com/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.thedatafaculty.com/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,28 +20,28 @@
     
     <item>
       <title>Introduction to Python</title>
-      <link>https://example.com/docs/introduction-to-python/</link>
+      <link>https://www.thedatafaculty.com/docs/introduction-to-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/introduction-to-python/</guid>
+      <guid>https://www.thedatafaculty.com/docs/introduction-to-python/</guid>
       <description>Introduction What can Python do?  Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.  Python Python is a simple language with straightforward syntax.</description>
     </item>
     
     <item>
       <title>Introduction to Python</title>
-      <link>https://example.com/docs/python-get-started/</link>
+      <link>https://www.thedatafaculty.com/docs/python-get-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-get-started/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-get-started/</guid>
       <description>Introduction Python Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3. This tutorial uses Python 3 because it is the most up-to-date and supports newer features. For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be invoked with parentheses and also includes a newline, unlike in C.</description>
     </item>
     
     <item>
       <title>Python Functions</title>
-      <link>https://example.com/docs/python-functions/</link>
+      <link>https://www.thedatafaculty.com/docs/python-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-functions/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-functions/</guid>
       <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
 Functions There are a number of rules governing the naming of variables:
  Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
@@ -49,10 +49,10 @@ Functions There are a number of rules governing the naming of variables:
     
     <item>
       <title>Python Functions</title>
-      <link>https://example.com/docs/python-numbers/</link>
+      <link>https://www.thedatafaculty.com/docs/python-numbers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-numbers/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-numbers/</guid>
       <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
 Functions There are a number of rules governing the naming of variables:
  Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
@@ -60,10 +60,10 @@ Functions There are a number of rules governing the naming of variables:
     
     <item>
       <title>Python Functions</title>
-      <link>https://example.com/docs/python-syntax/</link>
+      <link>https://www.thedatafaculty.com/docs/python-syntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-syntax/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-syntax/</guid>
       <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
 Functions There are a number of rules governing the naming of variables:
  Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
@@ -71,21 +71,21 @@ Functions There are a number of rules governing the naming of variables:
     
     <item>
       <title>Python Lists</title>
-      <link>https://example.com/docs/python-lists/</link>
+      <link>https://www.thedatafaculty.com/docs/python-lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-lists/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-lists/</guid>
       <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
-What are lists? There are a number of rules governing the naming of variables:
- Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+What are lists? A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
+Create a list myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;orange&amp;quot;] # Assigning an integer value  Accessing List Items Accessing a Range of List Items Change Item Values Copying a List myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;] newList = myList.</description>
     </item>
     
     <item>
       <title>Python Lists</title>
-      <link>https://example.com/docs/python-numpy/</link>
+      <link>https://www.thedatafaculty.com/docs/python-numpy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-numpy/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-numpy/</guid>
       <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
 What are lists? There are a number of rules governing the naming of variables:
  Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
@@ -93,28 +93,28 @@ What are lists? There are a number of rules governing the naming of variables:
     
     <item>
       <title>Variables and Types</title>
-      <link>https://example.com/docs/python-loop/</link>
+      <link>https://www.thedatafaculty.com/docs/python-loop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-loop/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-loop/</guid>
       <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
     </item>
     
     <item>
       <title>Variables and Types</title>
-      <link>https://example.com/docs/python-operators/</link>
+      <link>https://www.thedatafaculty.com/docs/python-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-operators/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-operators/</guid>
       <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
     </item>
     
     <item>
       <title>Variables and Types</title>
-      <link>https://example.com/docs/python-variables-types/</link>
+      <link>https://www.thedatafaculty.com/docs/python-variables-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/docs/python-variables-types/</guid>
+      <guid>https://www.thedatafaculty.com/docs/python-variables-types/</guid>
       <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
     </item>
     

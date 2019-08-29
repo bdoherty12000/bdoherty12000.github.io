@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Python Functions | The Data Faculty</title>
+<title>Python Lists | The Data Faculty</title>
 
 
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
@@ -52,7 +52,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   <style>
-  nav ul a[href$="\2f docs\2fpython-numbers\2f "] {
+  nav ul a[href$="\2fhome\2f about\2f "] {
       color: #004ed0;
   }
   </style>
@@ -95,69 +95,56 @@ https://github.com/alex-shpak/hugo-book
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Python Functions</strong>
+  <strong>Python Lists</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="python-functions">Python Functions</h1>
+<h1 id="python-lists">Python Lists</h1>
 
-<p>You&rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant
-Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!</p>
+<p>Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.</p>
 
-<h2 id="functions">Functions</h2>
+<h2 id="what-are-lists">What are lists?</h2>
 
-<p>There are a number of rules governing the naming of variables:</p>
-
-<ol>
-<li>Variable names cannot start with a number</li>
-<li>There cannot be any spaces in a variable name</li>
-<li>Reserved words cannot be used in variable names</li>
-</ol>
+<p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.</p>
 
 <h2 id="create-a-list">Create a list</h2>
 
-<p>The equals sign = is used to assign values to variables</p>
-
-<pre><code>count = 100         # Assigning an integer value
-name = &quot;Pat&quot;        # A string
-measure = 100.0     # A floating point value
+<pre><code>myList = [&quot;apple&quot;, &quot;banana&quot;, &quot;orange&quot;]          # Assigning an integer value
 </code></pre>
 
-<h2 id="subsetting-lists">Subsetting Lists</h2>
+<h2 id="accessing-list-items">Accessing List Items</h2>
 
-<p>Python has five standard data types.</p>
+<h2 id="accessing-a-range-of-list-items">Accessing a Range of List Items</h2>
 
-<pre><code>Number
-String
-List
-Tuple
-Dictionary
+<h2 id="change-item-values">Change Item Values</h2>
+
+<h2 id="copying-a-list">Copying a List</h2>
+
+<pre><code>myList = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+newList = myList.copy()
+print(newList)
 </code></pre>
 
-<h2 id="slicing">Slicing</h2>
-
-<p>Python supports four different numerical types:</p>
-
-<pre><code>int (signed integers)
-long (long integers)
-float (floating point numbers)
-complex (complex numbers)
-</code></pre>
-
-<p>To define an integer, use the following syntax:</p>
-
-<pre><code>myinteger = 7 
-</code></pre>
-
-<h2 id="subsetting-lists-1">Subsetting Lists</h2>
+<h2 id="looping-through-a-list">Looping through a List</h2>
 
 <h2 id="replacing-list-elements">Replacing List Elements</h2>
 
 <h2 id="extending-a-list">Extending a List</h2>
 
 <h2 id="deleting-list-elements">Deleting List Elements</h2>
+
+<h2 id="checking-if-item-exists">Checking if Item Exists</h2>
+
+<h2 id="joining-two-lists">Joining Two Lists</h2>
+
+<pre><code>list1 = [&quot;a&quot;, &quot;b&quot; , &quot;c&quot;]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+</code></pre>
 </article>
 
       
@@ -165,7 +152,7 @@ complex (complex numbers)
   
   
   <div>
-    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/docs%5cpython-numbers.md" target="_blank" rel="noopener">
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/home%5cabout.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -182,16 +169,20 @@ complex (complex numbers)
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#python-functions">Python Functions</a>
+<li><a href="#python-lists">Python Lists</a>
 <ul>
-<li><a href="#functions">Functions</a></li>
+<li><a href="#what-are-lists">What are lists?</a></li>
 <li><a href="#create-a-list">Create a list</a></li>
-<li><a href="#subsetting-lists">Subsetting Lists</a></li>
-<li><a href="#slicing">Slicing</a></li>
-<li><a href="#subsetting-lists-1">Subsetting Lists</a></li>
+<li><a href="#accessing-list-items">Accessing List Items</a></li>
+<li><a href="#accessing-a-range-of-list-items">Accessing a Range of List Items</a></li>
+<li><a href="#change-item-values">Change Item Values</a></li>
+<li><a href="#copying-a-list">Copying a List</a></li>
+<li><a href="#looping-through-a-list">Looping through a List</a></li>
 <li><a href="#replacing-list-elements">Replacing List Elements</a></li>
 <li><a href="#extending-a-list">Extending a List</a></li>
 <li><a href="#deleting-list-elements">Deleting List Elements</a></li>
+<li><a href="#checking-if-item-exists">Checking if Item Exists</a></li>
+<li><a href="#joining-two-lists">Joining Two Lists</a></li>
 </ul></li>
 </ul>
 </nav>
