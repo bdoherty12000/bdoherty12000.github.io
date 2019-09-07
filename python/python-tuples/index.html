@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python Tuples | The Data Faculty</title>
+
+
+<link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
+
+
+<script defer src="/search.min.3e9a2f87ff17ae53edb2e7c0a4a0bb19b9b3df069434d29d6af10b02392d95bd.js"></script>
+
+
+
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-145397309-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://www.thedatafaculty.com">The Data Faculty</a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" readonly />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fpython\2fpython-tuples\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/python/">Python</a>
+
+<ul>
+<li><a href="/python/introduction-to-python">Hello World</a></li>
+<li><a href="/python/python-variables-types">Variables and Types</a></li>
+</ul></li>
+<li><a href="/SQL/">SQL</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/posts">Blog</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>Python Tuples</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="python-tuples">Python Tuples</h1>
+
+<p>A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.</p>
+
+<p>Example
+Create a Tuple:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+print(thistuple)
+</code></pre>
+
+<h1 id="access-tuple-items">Access Tuple Items</h1>
+
+<p>You can access tuple items by referring to the index number, inside square brackets:</p>
+
+<p>Example
+Print the second item in the tuple:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+print(thistuple[1])
+</code></pre>
+
+<h1 id="negative-indexing">Negative Indexing</h1>
+
+<p>Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item etc.</p>
+
+<p>Example
+Print the last item of the tuple:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+print(thistuple[-1])
+</code></pre>
+
+<h1 id="range-of-indexes">Range of Indexes</h1>
+
+<p>You can specify a range of indexes by specifying where to start and where to end the range.</p>
+
+<p>When specifying a range, the return value will be a new tuple with the specified items.</p>
+
+<p>Example
+Return the third, fourth, and fifth item:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)
+print(thistuple[2:5])
+</code></pre>
+
+<p>Note: The search will start at index 2 (included) and end at index 5 (not included).</p>
+
+<p>Remember that the first item has index 0.</p>
+
+<h1 id="range-of-negative-indexes">Range of Negative Indexes</h1>
+
+<p>Specify negative indexes if you want to start the search from the end of the tuple:</p>
+
+<p>Example
+This example returns the items from index -4 (included) to index -1 (excluded)</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)
+print(thistuple[-4:-1])
+</code></pre>
+
+<h1 id="change-tuple-values">Change Tuple Values</h1>
+
+<p>Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.</p>
+
+<p>But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.</p>
+
+<p>Example
+Convert the tuple into a list to be able to change it:</p>
+
+<pre><code>x = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+y = list(x)
+y[1] = &quot;kiwi&quot;
+x = tuple(y)
+
+print(x)
+</code></pre>
+
+<h1 id="loop-through-a-tuple">Loop Through a Tuple</h1>
+
+<p>You can loop through the tuple items by using a for loop.</p>
+
+<p>Example
+Iterate through the items and print the values:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+for x in thistuple:
+  print(x)
+</code></pre>
+
+<p>You will learn more about for loops in our Python For Loops Chapter.</p>
+
+<h1 id="check-if-item-exists">Check if Item Exists</h1>
+
+<p>To determine if a specified item is present in a tuple use the in keyword:</p>
+
+<p>Example
+Check if &ldquo;apple&rdquo; is present in the tuple:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+if &quot;apple&quot; in thistuple:
+    print(&quot;Yes, 'apple' is in the fruits tuple&quot;)
+</code></pre>
+
+<h1 id="tuple-length">Tuple Length</h1>
+
+<p>To determine how many items a tuple has, use the len() method:</p>
+
+<p>Example
+Print the number of items in the tuple:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+print(len(thistuple))
+</code></pre>
+
+<h1 id="add-items">Add Items</h1>
+
+<p>Once a tuple is created, you cannot add items to it. Tuples are unchangeable.</p>
+
+<p>Example
+You cannot add items to a tuple:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+thistuple[3] = &quot;orange&quot; # This will raise an error
+print(thistuple)
+</code></pre>
+
+<h1 id="create-tuple-with-one-item">Create Tuple With One Item</h1>
+
+<p>To create a tuple with only one item, you have add a comma after the item, unless Python will not recognize the variable as a tuple.</p>
+
+<p>Example
+One item tuple, remember the commma:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;,)
+print(type(thistuple))
+</code></pre>
+
+<h1 id="not-a-tuple">NOT a tuple</h1>
+
+<pre><code>thistuple = (&quot;apple&quot;)
+print(type(thistuple))
+</code></pre>
+
+<h1 id="remove-items">Remove Items</h1>
+
+<p>Note: You cannot remove items in a tuple.</p>
+
+<p>Tuples are unchangeable, so you cannot remove items from it, but you can delete the tuple completely:</p>
+
+<p>Example
+The del keyword can delete the tuple completely:</p>
+
+<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
+</code></pre>
+
+<h1 id="join-two-tuples">Join Two Tuples</h1>
+
+<p>To join two or more tuples you can use the + operator:</p>
+
+<p>Example
+Join two tuples:</p>
+
+<pre><code>tuple1 = (&quot;a&quot;, &quot;b&quot; , &quot;c&quot;)
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
+</code></pre>
+
+<p>The tuple() Constructor
+It is also possible to use the tuple() constructor to make a tuple.</p>
+
+<p>Example
+Using the tuple() method to make a tuple:</p>
+
+<pre><code>thistuple = tuple((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)) # note the double round-brackets
+print(thistuple)
+</code></pre>
+
+<h1 id="tuple-methods">Tuple Methods</h1>
+
+<p>Python has two built-in methods that you can use on tuples.</p>
+
+<p>Method  Description
+count() Returns the number of times a specified value occurs in a tuple
+index() Searches the tuple for a specified value and returns the position of where it was found</p>
+</article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/python%5cpython-tuples.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#python-tuples">Python Tuples</a></li>
+<li><a href="#access-tuple-items">Access Tuple Items</a></li>
+<li><a href="#negative-indexing">Negative Indexing</a></li>
+<li><a href="#range-of-indexes">Range of Indexes</a></li>
+<li><a href="#range-of-negative-indexes">Range of Negative Indexes</a></li>
+<li><a href="#change-tuple-values">Change Tuple Values</a></li>
+<li><a href="#loop-through-a-tuple">Loop Through a Tuple</a></li>
+<li><a href="#check-if-item-exists">Check if Item Exists</a></li>
+<li><a href="#tuple-length">Tuple Length</a></li>
+<li><a href="#add-items">Add Items</a></li>
+<li><a href="#create-tuple-with-one-item">Create Tuple With One Item</a></li>
+<li><a href="#not-a-tuple">NOT a tuple</a></li>
+<li><a href="#remove-items">Remove Items</a></li>
+<li><a href="#join-two-tuples">Join Two Tuples</a></li>
+<li><a href="#tuple-methods">Tuple Methods</a></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+ 
+</body>
+
+</html>

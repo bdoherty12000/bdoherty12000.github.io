@@ -82,6 +82,18 @@ Follow the following steps:
     </item>
     
     <item>
+      <title>Python Dictionaries</title>
+      <link>https://www.thedatafaculty.com/python/python-dictionaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedatafaculty.com/python/python-dictionaries/</guid>
+      <description>Python Dictionaries A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+Example Create and print a dictionary:
+thisdict = { &amp;quot;brand&amp;quot;: &amp;quot;Ford&amp;quot;, &amp;quot;model&amp;quot;: &amp;quot;Mustang&amp;quot;, &amp;quot;year&amp;quot;: 1964 } print(thisdict)  Accessing Dictionary Items You can access the items of a dictionary by referring to its key name, inside square brackets:
+Example Get the value of the &amp;ldquo;model&amp;rdquo; key:</description>
+    </item>
+    
+    <item>
       <title>Python Functions</title>
       <link>https://www.thedatafaculty.com/python/python-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -134,6 +146,19 @@ Create a list myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &
       <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
 What are lists? There are a number of rules governing the naming of variables:
  Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+    </item>
+    
+    <item>
+      <title>Python Tuples</title>
+      <link>https://www.thedatafaculty.com/python/python-tuples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.thedatafaculty.com/python/python-tuples/</guid>
+      <description>Python Tuples A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+Example Create a Tuple:
+thistuple = (&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;) print(thistuple)  Access Tuple Items You can access tuple items by referring to the index number, inside square brackets:
+Example Print the second item in the tuple:
+thistuple = (&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;) print(thistuple[1])  Negative Indexing Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item etc.</description>
     </item>
     
     <item>

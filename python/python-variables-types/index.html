@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
 
 
-<script defer src="/search.min.dc28e3d55575e3acc45134d5002942482155e227e3b47b0bf7d4ce3b070809e8.js"></script>
+<script defer src="/search.min.3e9a2f87ff17ae53edb2e7c0a4a0bb19b9b3df069434d29d6af10b02392d95bd.js"></script>
 
 
 
@@ -28,7 +28,7 @@ https://github.com/alex-shpak/hugo-book
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-1145397309-1', 'auto');
+	ga('create', 'UA-145397309-1', 'auto');
 	
 	ga('send', 'pageview');
 }
@@ -150,6 +150,7 @@ measure = 100.0     # A floating point value
     <li>List</li>
     <li>Tuple</li>
     <li>Dictionary</li>
+    <li>Set </li>
 </ul></p>
 
 <h2 id="python-numbers">Python Numbers</h2>
@@ -162,14 +163,24 @@ float (floating point numbers)
 complex (complex numbers)
 </code></pre>
 
-<p>To define an integer, use the following syntax:</p>
+<p>To define an integer, the following syntax is used:</p>
 
 <pre><code>myinteger = 7 
 </code></pre>
 
+<p>Floating point values are designated with a decimal point:</p>
+
+<pre><code>myfloat = 7.0
+</code></pre>
+
+<p>Complex numbers are made up of a real and an imaginary part. For example:</p>
+
+<pre><code>myComplex = 7 + 2j
+</code></pre>
+
 <h2 id="python-strings">Python Strings</h2>
 
-<p>Strings are created by enclosing a sequence of characters in single or double quotes.
+<p>Strings are sequences of characters and are created by enclosing a sequence of characters in single or double quotes.
 Strings are immutable i.e. they cannot be changed once they&rsquo;ve been created.
 They can, however, have characters or other strings added to them. Creating strings is straightforward:</p>
 
@@ -184,16 +195,25 @@ str[2:]      # Selects characters from the 3rd until the end
 str + &quot;TEST&quot; # Concatenates two strings
 </code></pre>
 
+<h1 id="python-collections-arrays">Python Collections (Arrays)</h1>
+
+<p>There are four collection data types in the Python programming language:
+    List
+    Tuple
+    Set
+    Dictionary</p>
+
 <h2 id="python-lists">Python Lists</h2>
 
-<p>Lists are created using square brackets.</p>
+<p>A list is a collection which is ordered, changeable and allows for duplicate members. Lists are created using square brackets.</p>
 
 <pre><code>myList = ['apple', 'orange', 'pear']
 </code></pre>
 
 <h2 id="python-tuples">Python Tuples</h2>
 
-<p>Tuples are created using parentheses and are immutable i.e. they can&rsquo;t be modified once they are assigned.</p>
+<p>A tuple is a collection which is ordered and immutable i.e. it can&rsquo;t be modified once it is assigned.
+Tuples are written using parentheses:</p>
 
 <pre><code>myTuple = (1, 2, 3)
 </code></pre>
@@ -207,10 +227,11 @@ str + &quot;TEST&quot; # Concatenates two strings
 
 <h2 id="python-sets">Python Sets</h2>
 
-<p>A Set is unordered data type that is mutable, iterable, and has no duplicate elements and echoes the classical
-mathematical concept of a set.</p>
+<p>A Set is a collection which is unordered and is mutable and iterable. It has no duplicate elements and follows the
+mathematical concept of a set. It is written as:</p>
 
 <pre><code>mySet = set([&quot;a&quot;, &quot;b&quot;, &quot;c&quot;])
+mySet = {&quot;a&quot;, &quot;b&quot;, &quot;c&quot;}
 </code></pre>
 
 <h2 id="booleans">Booleans</h2>
@@ -255,6 +276,9 @@ not f     # Logical NOT
 <li><a href="#standard-data-types">Standard Data Types</a></li>
 <li><a href="#python-numbers">Python Numbers</a></li>
 <li><a href="#python-strings">Python Strings</a></li>
+</ul></li>
+<li><a href="#python-collections-arrays">Python Collections (Arrays)</a>
+<ul>
 <li><a href="#python-lists">Python Lists</a></li>
 <li><a href="#python-tuples">Python Tuples</a></li>
 <li><a href="#python-dictionaries">Python Dictionaries</a></li>
