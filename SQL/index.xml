@@ -1,13 +1,128 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Data Faculty</title>
-    <link>https://www.thedatafaculty.com/SQL/</link>
-    <description>Recent content on The Data Faculty</description>
+    <title>UpLrn</title>
+    <link>https://www.uplrn.com/sql/</link>
+    <description>Recent content on UpLrn</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://www.thedatafaculty.com/SQL/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.uplrn.com/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://www.uplrn.com/sql/sql-logical-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-logical-operators/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.uplrn.com/sql/sql-where/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-where/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>Introduction to SQL</title>
+      <link>https://www.uplrn.com/sql/introduction-to-sql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/introduction-to-sql/</guid>
+      <description>SQL is a standard language for accessing and manipulating databases.
+What is SQL? SQL stands for Structured Query Language SQL lets you access and manipulate databases SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+What Can SQL do? SQL can execute queries against a database SQL can retrieve data from a database SQL can insert records in a database SQL can update records in a database SQL can delete records from a database SQL can create new databases SQL can create new tables in a database SQL can create stored procedures in a database SQL can create views in a database SQL can set permissions on tables, procedures, and views SQL is a Standard - BUT&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>SQL Delete</title>
+      <link>https://www.uplrn.com/sql/sql-delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-delete/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Select</title>
+      <link>https://www.uplrn.com/sql/sql-select/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-select/</guid>
+      <description>The SQL SELECT Statement The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
+SELECT column1, column2 FROM tableName;  Here, column1 and column2 are the field names of the table you are selecting data from. If you want to select all the fields in the table, use the following syntax:
+SELECT * FROM tableName;  Demo Database Below is a selection from the &amp;ldquo;Customers&amp;rdquo; table in the Northwind sample database:   ID CustomerName</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-casting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-casting/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-control-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-control-flow/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-strings/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-update/</guid>
+      <description> SQL UPDATE UPDATE tableName SET column1 = value1, column2 = value2 WHERE condition;  Updating a Table UPDATE Customers SET ContactName = &#39;John McGee&#39;, City = &#39;Frankfurt&#39; WHERE CustomerID = 1;  Update Multiple Table Entries UPDATE Customers SET ContactName = &#39;John&#39; WHERE Country = &#39;Ireland&#39;;  </description>
+    </item>
     
   </channel>
 </rss>

@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Data Faculty</title>
-    <link>https://www.thedatafaculty.com/</link>
-    <description>Recent content on The Data Faculty</description>
+    <title>UpLrn</title>
+    <link>https://www.uplrn.com/</link>
+    <description>Recent content on UpLrn</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://www.thedatafaculty.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.uplrn.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://www.thedatafaculty.com/posts/creating-a-new-theme/</link>
+      <link>https://www.uplrn.com/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/posts/creating-a-new-theme/</guid>
+      <guid>https://www.uplrn.com/posts/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
     <item>
       <title>Migrate to Hugo from Jekyll</title>
-      <link>https://www.thedatafaculty.com/posts/migrate-from-jekyll/</link>
+      <link>https://www.uplrn.com/posts/migrate-from-jekyll/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/posts/migrate-from-jekyll/</guid>
+      <guid>https://www.uplrn.com/posts/migrate-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
@@ -32,20 +32,20 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>https://www.thedatafaculty.com/posts/goisforlovers/</link>
+      <link>https://www.uplrn.com/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/posts/goisforlovers/</guid>
+      <guid>https://www.uplrn.com/posts/goisforlovers/</guid>
       <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
 This document is a brief primer on using Go templates.</description>
     </item>
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://www.thedatafaculty.com/posts/hugoisforlovers/</link>
+      <link>https://www.uplrn.com/posts/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/posts/hugoisforlovers/</guid>
+      <guid>https://www.uplrn.com/posts/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo
@@ -55,38 +55,114 @@ Follow the following steps:
     </item>
     
     <item>
-      <title>About Us</title>
-      <link>https://www.thedatafaculty.com/about/</link>
+      <title></title>
+      <link>https://www.uplrn.com/sql/sql-logical-operators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/about/</guid>
-      <description>About Us Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.</description>
+      <guid>https://www.uplrn.com/sql/sql-logical-operators/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.uplrn.com/sql/sql-where/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-where/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>About Us</title>
+      <link>https://www.uplrn.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/about/</guid>
+      <description>About Us This website is available as a source of educational material.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to HTML</title>
+      <link>https://www.uplrn.com/html/introduction-to-html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/html/introduction-to-html/</guid>
+      <description>Introduction What can HTML do?  Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.  HTML Python is a simple language with straightforward syntax.</description>
     </item>
     
     <item>
       <title>Introduction to Python</title>
-      <link>https://www.thedatafaculty.com/python/introduction-to-python/</link>
+      <link>https://www.uplrn.com/python/introduction-to-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/introduction-to-python/</guid>
+      <guid>https://www.uplrn.com/python/introduction-to-python/</guid>
       <description>Introduction What can Python do?  Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.  Python Python is a simple language with straightforward syntax.</description>
     </item>
     
     <item>
       <title>Introduction to Python</title>
-      <link>https://www.thedatafaculty.com/python/python-get-started/</link>
+      <link>https://www.uplrn.com/python/python-get-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-get-started/</guid>
+      <guid>https://www.uplrn.com/python/python-get-started/</guid>
       <description>Introduction Python Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3. This tutorial uses Python 3 because it is the most up-to-date and supports newer features. For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be invoked with parentheses and also includes a newline, unlike in C.</description>
     </item>
     
     <item>
-      <title>Python Dictionaries</title>
-      <link>https://www.thedatafaculty.com/python/python-dictionaries/</link>
+      <title>Introduction to SQL</title>
+      <link>https://www.uplrn.com/sql/introduction-to-sql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-dictionaries/</guid>
+      <guid>https://www.uplrn.com/sql/introduction-to-sql/</guid>
+      <description>SQL is a standard language for accessing and manipulating databases.
+What is SQL? SQL stands for Structured Query Language SQL lets you access and manipulate databases SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+What Can SQL do? SQL can execute queries against a database SQL can retrieve data from a database SQL can insert records in a database SQL can update records in a database SQL can delete records from a database SQL can create new databases SQL can create new tables in a database SQL can create stored procedures in a database SQL can create views in a database SQL can set permissions on tables, procedures, and views SQL is a Standard - BUT&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Loops in Python</title>
+      <link>https://www.uplrn.com/python/python-loops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/python/python-loops/</guid>
+      <description> Loops in Python Python provides two ways of looping:
+ while loops for loops  While Loops i = 1 while i &amp;lt; 6: print(i) i += 1  The Break Statement i = 1 while i &amp;lt; 6: print(i) if i == 3: break i += 1  The Continue Statement i = 0 while i &amp;lt; 6: i += 1 if i == 3: continue print(i)  The Else Statement i = 1 while i &amp;lt; 6: print(i) i += 1 else: print(&amp;quot;i is no longer less than 6&amp;quot;)  For Loops fruits = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;] for x in fruits: print(x)  The break Statement fruits = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;] for x in fruits: print(x) if x == &amp;quot;banana&amp;quot;: break  </description>
+    </item>
+    
+    <item>
+      <title>Numpy</title>
+      <link>https://www.uplrn.com/python/python-numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/python/python-numpy/</guid>
+      <description> Numpy What is Numpy? </description>
+    </item>
+    
+    <item>
+      <title>Operators</title>
+      <link>https://www.uplrn.com/python/python-operators/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/python/python-operators/</guid>
+      <description> Operators </description>
+    </item>
+    
+    <item>
+      <title>Python Dictionaries</title>
+      <link>https://www.uplrn.com/python/python-dictionaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/python/python-dictionaries/</guid>
       <description>Python Dictionaries A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
 Example Create and print a dictionary:
 thisdict = { &amp;quot;brand&amp;quot;: &amp;quot;Ford&amp;quot;, &amp;quot;model&amp;quot;: &amp;quot;Mustang&amp;quot;, &amp;quot;year&amp;quot;: 1964 } print(thisdict)  Accessing Dictionary Items You can access the items of a dictionary by referring to its key name, inside square brackets:
@@ -95,96 +171,136 @@ Example Get the value of the &amp;ldquo;model&amp;rdquo; key:</description>
     
     <item>
       <title>Python Functions</title>
-      <link>https://www.thedatafaculty.com/python/python-functions/</link>
+      <link>https://www.uplrn.com/python/python-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-functions/</guid>
-      <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
-Functions There are a number of rules governing the naming of variables:
- Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
-    </item>
-    
-    <item>
-      <title>Python Functions</title>
-      <link>https://www.thedatafaculty.com/python/python-numbers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.thedatafaculty.com/python/python-numbers/</guid>
-      <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
-Functions There are a number of rules governing the naming of variables:
- Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
-    </item>
-    
-    <item>
-      <title>Python Functions</title>
-      <link>https://www.thedatafaculty.com/python/python-syntax/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.thedatafaculty.com/python/python-syntax/</guid>
-      <description>Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
-Functions There are a number of rules governing the naming of variables:
- Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+      <guid>https://www.uplrn.com/python/python-functions/</guid>
+      <description> Python Functions You&amp;rsquo;ll learn how to use functions, methods, and packages to efficiently leverage the code that brilliant Python developers have written. The goal is to reduce the amount of code you need to solve challenging problems!
+Functions </description>
     </item>
     
     <item>
       <title>Python Lists</title>
-      <link>https://www.thedatafaculty.com/python/python-lists/</link>
+      <link>https://www.uplrn.com/python/python-lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-lists/</guid>
+      <guid>https://www.uplrn.com/python/python-lists/</guid>
       <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
 What are lists? A list is a collection which is ordered and changeable. In Python lists are written with square brackets.
 Create a list myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;orange&amp;quot;] # Assigning an integer value  Accessing List Items Accessing a Range of List Items Change Item Values Copying a List myList = [&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;] newList = myList.</description>
     </item>
     
     <item>
-      <title>Python Lists</title>
-      <link>https://www.thedatafaculty.com/python/python-numpy/</link>
+      <title>Python Numbers</title>
+      <link>https://www.uplrn.com/python/python-numbers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-numpy/</guid>
-      <description>Python Lists Learn to store, access, and manipulate data in lists: the first step toward efficiently working with huge amounts of data.
-What are lists? There are a number of rules governing the naming of variables:
- Variable names cannot start with a number There cannot be any spaces in a variable name Reserved words cannot be used in variable names  Create a list The equals sign = is used to assign values to variables</description>
+      <guid>https://www.uplrn.com/python/python-numbers/</guid>
+      <description> Python Numbers </description>
+    </item>
+    
+    <item>
+      <title>Python Syntax</title>
+      <link>https://www.uplrn.com/python/python-syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/python/python-syntax/</guid>
+      <description> Python Syntax </description>
     </item>
     
     <item>
       <title>Python Tuples</title>
-      <link>https://www.thedatafaculty.com/python/python-tuples/</link>
+      <link>https://www.uplrn.com/python/python-tuples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-tuples/</guid>
-      <description>Python Tuples A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
-Example Create a Tuple:
-thistuple = (&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;) print(thistuple)  Access Tuple Items You can access tuple items by referring to the index number, inside square brackets:
-Example Print the second item in the tuple:
-thistuple = (&amp;quot;apple&amp;quot;, &amp;quot;banana&amp;quot;, &amp;quot;cherry&amp;quot;) print(thistuple[1])  Negative Indexing Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item etc.</description>
+      <guid>https://www.uplrn.com/python/python-tuples/</guid>
+      <description>Python Tuples A Tuple is a collection which is ordered and unchangeable. Tuples are defined with round brackets:
+myTuple = (&amp;quot;SQL&amp;quot;, &amp;quot;Python&amp;quot;, &amp;quot;R&amp;quot;) print(myTuple)  Accessing Tuple Elements Indexing An element in a tuple can be accessed by referring to it&amp;rsquo;s index number, inside square brackets. The following prints the word &amp;ldquo;Python&amp;rdquo; which is the second element in the tuple:
+myTuple = (&amp;quot;SQL&amp;quot;, &amp;quot;Python&amp;quot;, &amp;quot;R&amp;quot;) print(myTuple[1])  Negative Indexing Negative indexing starts at the end of a tuple and indexes backwards towards the beginning.</description>
+    </item>
+    
+    <item>
+      <title>SQL Delete</title>
+      <link>https://www.uplrn.com/sql/sql-delete/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-delete/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Select</title>
+      <link>https://www.uplrn.com/sql/sql-select/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-select/</guid>
+      <description>The SQL SELECT Statement The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
+SELECT column1, column2 FROM tableName;  Here, column1 and column2 are the field names of the table you are selecting data from. If you want to select all the fields in the table, use the following syntax:
+SELECT * FROM tableName;  Demo Database Below is a selection from the &amp;ldquo;Customers&amp;rdquo; table in the Northwind sample database:   ID CustomerName</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-casting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-casting/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-control-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-control-flow/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-strings/</guid>
+      <description>Lesson 87 Account Transfer Problem use test;
+create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);
+insert into accounts(balance) values (1000.00); insert into accounts(balance) values (1000.00);
+select * from accounts;
+set @transfer = 200.00;
+Transaction makes statements atomic - all or none succeed. Until commit no updates will occur - single atomic block - even if application closes. start transaction; update accounts set balance = balance - @transfer where id = 1; update accounts set balance = balance + @transfer where id = 2; commit;</description>
+    </item>
+    
+    <item>
+      <title>SQL Update</title>
+      <link>https://www.uplrn.com/sql/sql-update/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/sql/sql-update/</guid>
+      <description> SQL UPDATE UPDATE tableName SET column1 = value1, column2 = value2 WHERE condition;  Updating a Table UPDATE Customers SET ContactName = &#39;John McGee&#39;, City = &#39;Frankfurt&#39; WHERE CustomerID = 1;  Update Multiple Table Entries UPDATE Customers SET ContactName = &#39;John&#39; WHERE Country = &#39;Ireland&#39;;  </description>
     </item>
     
     <item>
       <title>Variables and Types</title>
-      <link>https://www.thedatafaculty.com/python/python-loop/</link>
+      <link>https://www.uplrn.com/python/python-variables-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.thedatafaculty.com/python/python-loop/</guid>
-      <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
-    </item>
-    
-    <item>
-      <title>Variables and Types</title>
-      <link>https://www.thedatafaculty.com/python/python-operators/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.thedatafaculty.com/python/python-operators/</guid>
-      <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
-    </item>
-    
-    <item>
-      <title>Variables and Types</title>
-      <link>https://www.thedatafaculty.com/python/python-variables-types/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.thedatafaculty.com/python/python-variables-types/</guid>
+      <guid>https://www.uplrn.com/python/python-variables-types/</guid>
       <description>Variables and Types Variables are reserved memory locations used to store values. Python has several basic data types that behave in ways that are similar to other programming languages. You do not need to declare variables before using them or declare their type. Every variable in Python is an object. Variables can hold any value and are case-sensitive. This tutorial will go over a few basic types of variables.</description>
     </item>
     

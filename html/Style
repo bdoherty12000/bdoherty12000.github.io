@@ -1,0 +1,107 @@
+Cascading Style Sheets (CSS) describe how web pages appear based on a series of rules. They provide an easy way to specify various attributes for HTML tags. Using CSS, a number of style properties can be defined for a HTML element. Each property has a name and a value, 
+separated by a colon (:). Each property declaration is separated by a semi-colon (;).
+
+CSS can be used in three ways in a HTML document
+
+External Style Sheet
+Style sheet rules are defined in a separate .css file and that file is included in a HTML document using a <link> tag.
+
+Internal Style Sheet 
+Style sheet rules are defined in the header section of a HTML document using the <style> tag.
+
+Inline Style Sheet − 
+Style sheet rules are defined alongside a HTML element using the style attribute.
+
+External Style Sheet
+If you need to define styles for several pages, then its always recommended to define a common style sheet in a separate file. 
+A cascading style sheet file will have a .css extension and it will be included in HTML files using the <link> tag.
+
+Example
+Consider the style sheet style.css which has following rules −
+
+.red {
+   color: red;
+}
+.thick {
+   font-size:20px;
+}
+.green {
+   color:green;
+}
+
+Here we defined an external style sheet with three CSS rules that are applicable to three different classes; red, thick and green. 
+The external CSS file is included in a HTML document in the following way:
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML External CSS</title>
+      <link rel = "stylesheet" type = "text/css" href = "/html/style.css">
+   </head>
+   <body>
+      <p class = "red">This is red</p>
+      <p class = "thick">This is thick</p>
+      <p class = "green">This is green</p>
+      <p class = "thick green">This is thick and green</p>
+   </body>
+</html>
+This will produce the following result −
+
+
+Internal Style Sheet
+If a Style Sheet is applied to a single document only, these rules can be included in the header section of the 
+HTML document using the <style> tag. Rules defined in an internal style sheet override those in an external CSS file.
+
+Example
+The above example can be re-written to use an internal style sheet in the same HTML document using the <style> tag.
+
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>HTML Internal CSS</title> 
+      
+      <style type = "text/css"> 
+         .red { 
+            color: red; 
+         } 
+         .thick{ 
+            font-size:20px; 
+         } 
+         .green { 
+            color:green; 
+         } 
+      </style> 
+   </head>
+	
+   <body> 
+      <p class = "red">This is red</p>  
+      <p class = "thick">This is thick</p>  
+      <p class = "green">This is green</p>  
+      <p class = "thick green">This is thick and green</p> 
+   </body>
+	
+</html>
+This will produce the following result −
+
+Inline Style Sheet
+Style sheet rules can be applied directly to any HTML element using the style attribute of the tag. This should be done only when a specific change is to be made locally only. Rules that are defined inline override those defined in an external CSS file or the header section within the <style> element.
+
+Example
+Reconsidering our example this will look like:
+
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>HTML Inline CSS</title> 
+   </head>
+ 
+   <body> 
+      <p style = "color:red;">This is red</p>  
+      <p style = "font-size:20px;">This is thick</p>  
+      <p style = "color:green;">This is green</p>  
+      <p style = "color:green;font-size:20px;">This is thick and green</p> 
+   </body>
+ 
+</html> 
+This will produce the following result −
+

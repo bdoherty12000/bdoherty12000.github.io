@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Python Tuples | The Data Faculty</title>
+<title>Python Tuples | UpLrn</title>
 
 
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
 
 
-<script defer src="/search.min.3e9a2f87ff17ae53edb2e7c0a4a0bb19b9b3df069434d29d6af10b02392d95bd.js"></script>
+<script defer src="/search.min.d01da900db06deed42e25708c66bc175e0aef4bf7023376919e764ebcdf5df5e.js"></script>
 
 
 
@@ -44,7 +44,7 @@ if (!doNotTrack) {
     <aside class="book-menu fixed">
       <nav>
 <h2 class="book-brand">
-  <a href="https://www.thedatafaculty.com">The Data Faculty</a>
+  <a href="https://www.uplrn.com">UpLrn</a>
 </h2>
 
 
@@ -73,10 +73,35 @@ if (!doNotTrack) {
 <li><a href="/python/">Python</a>
 
 <ul>
-<li><a href="/python/introduction-to-python">Hello World</a></li>
+<li><a href="/python/introduction-to-python">Introduction</a></li>
 <li><a href="/python/python-variables-types">Variables and Types</a></li>
+<li><a href="/python/python-numbers">Numbers</a></li>
+<li><a href="/python/python-lists">Lists</a></li>
+<li><a href="/python/python-tuples">Tuples</a></li>
+<li><a href="/python/python-dictionaries">Dictionaries</a></li>
+<li><a href="/python/python-operators">Operators</a></li>
+<li><a href="/python/python-loops">Loops</a></li>
+<li><a href="/python/python-numpy">Numpy</a></li>
+<li><a href="/python/python-functions">Functions</a></li>
 </ul></li>
-<li><a href="/SQL/">SQL</a></li>
+<li><a href="/html/">HTML</a>
+
+<ul>
+<li><a href="/html/introduction-to-html">Introduction</a></li>
+</ul></li>
+<li><a href="/sql/">SQL</a>
+
+<ul>
+<li><a href="/sql/introduction-to-sql">Introduction</a></li>
+<li><a href="/sql/sql-select">Select</a></li>
+<li><a href="/sql/sql-update">Update</a></li>
+<li><a href="/sql/sql-delete">Delete</a></li>
+</ul></li>
+<li><a href="/R/">R</a>
+
+<ul>
+<li><a href="/R/">Get Started</a></li>
+</ul></li>
 <li><a href="/about">About</a></li>
 <li><a href="/posts">Blog</a></li>
 </ul>
@@ -115,168 +140,122 @@ if (!doNotTrack) {
 
 <h1 id="python-tuples">Python Tuples</h1>
 
-<p>A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.</p>
+<p>A Tuple is a collection which is ordered and unchangeable. Tuples are defined with round brackets:</p>
 
-<p>Example
-Create a Tuple:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-print(thistuple)
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+print(myTuple)
 </code></pre>
 
-<h1 id="access-tuple-items">Access Tuple Items</h1>
+<h1 id="accessing-tuple-elements">Accessing Tuple Elements</h1>
 
-<p>You can access tuple items by referring to the index number, inside square brackets:</p>
+<h2 id="indexing">Indexing</h2>
 
-<p>Example
-Print the second item in the tuple:</p>
+<p>An element in a tuple can be accessed by referring to it&rsquo;s index number, inside square brackets. The following
+prints the word &ldquo;Python&rdquo; which is the second element in the tuple:</p>
 
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-print(thistuple[1])
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+print(myTuple[1])
 </code></pre>
 
-<h1 id="negative-indexing">Negative Indexing</h1>
+<h2 id="negative-indexing">Negative Indexing</h2>
 
-<p>Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item etc.</p>
+<p>Negative indexing starts at the end of a tuple and indexes backwards towards the beginning. The last element in the
+tuple is at location -1, -2 refers to the second last item etc. The following prints the string &lsquo;R&rsquo;:</p>
 
-<p>Example
-Print the last item of the tuple:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-print(thistuple[-1])
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+print(myTuple[-1])
 </code></pre>
 
-<h1 id="range-of-indexes">Range of Indexes</h1>
+<h2 id="range-of-indexes">Range of Indexes</h2>
 
-<p>You can specify a range of indexes by specifying where to start and where to end the range.</p>
+<p>You can specify a range of indexes by specifying where to start and where to end the range.
+When specifying a range, the return value will be a new tuple with the specified items. Return the
+third, fourth, and fifth item:</p>
 
-<p>When specifying a range, the return value will be a new tuple with the specified items.</p>
-
-<p>Example
-Return the third, fourth, and fifth item:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)
-print(thistuple[2:5])
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)
+print(myTuple[2:5])
 </code></pre>
 
-<p>Note: The search will start at index 2 (included) and end at index 5 (not included).</p>
+<p>Note: The search will start at index 2 (included) and end at index 5 (not included).
+Remember that the first item has index 0.</p>
 
-<p>Remember that the first item has index 0.</p>
+<h2 id="range-of-negative-indexes">Range of Negative Indexes</h2>
 
-<h1 id="range-of-negative-indexes">Range of Negative Indexes</h1>
-
-<p>Specify negative indexes if you want to start the search from the end of the tuple:</p>
-
-<p>Example
+<p>Specify negative indexes if you want to start the search from the end of the Tuple.
 This example returns the items from index -4 (included) to index -1 (excluded)</p>
 
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)
-print(thistuple[-4:-1])
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)
+print(myTuple[-4:-1])
 </code></pre>
 
-<h1 id="change-tuple-values">Change Tuple Values</h1>
+<h1 id="modifying-tuples">Modifying Tuples</h1>
 
-<p>Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.</p>
+<p>Once a tuple is created it is immutable. This means you cannot change its values.</p>
 
-<p>But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.</p>
+<h2 id="adding-elements-to-a-tuple">Adding Elements to a Tuple</h2>
 
-<p>Example
-Convert the tuple into a list to be able to change it:</p>
+<p>Once a tuple is created, you cannot add items to it. Tuples are unchangeable. You cannot add items to a tuple:</p>
 
-<pre><code>x = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-y = list(x)
-y[1] = &quot;kiwi&quot;
-x = tuple(y)
-
-print(x)
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+myTuple[3] = &quot;orange&quot; # This will raise an error
+print(myTuple)
 </code></pre>
 
-<h1 id="loop-through-a-tuple">Loop Through a Tuple</h1>
+<h2 id="removing-elements-from-a-tuple">Removing Elements from a Tuple</h2>
 
-<p>You can loop through the tuple items by using a for loop.</p>
+<p>You cannot remove items in a tuple. Tuples are unchangeable, so you cannot remove items from it, but you
+can delete the tuple completely. The del keyword can delete the tuple completely:</p>
 
-<p>Example
-Iterate through the items and print the values:</p>
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+del myTuple
+print(myTuple) #this will raise an error because the tuple no longer exists
+</code></pre>
 
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-for x in thistuple:
+<h2 id="looping-through-a-tuple">Looping Through a Tuple</h2>
+
+<p>You can loop through the tuple items by using a for loop. Iterate through the items and print the values:</p>
+
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+for x in myTuple:
   print(x)
 </code></pre>
 
-<p>You will learn more about for loops in our Python For Loops Chapter.</p>
-
 <h1 id="check-if-item-exists">Check if Item Exists</h1>
 
-<p>To determine if a specified item is present in a tuple use the in keyword:</p>
+<p>To determine if a specified item is present in a tuple the &lsquo;in&rsquo; keyword can be used.
+For example, to check if &ldquo;SQL&rdquo; is present in the tuple:</p>
 
-<p>Example
-Check if &ldquo;apple&rdquo; is present in the tuple:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-if &quot;apple&quot; in thistuple:
-    print(&quot;Yes, 'apple' is in the fruits tuple&quot;)
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+if &quot;SQL&quot; in myTuple:
+    print(&quot;Yes, 'SQL' is present in the tuple&quot;)
 </code></pre>
 
 <h1 id="tuple-length">Tuple Length</h1>
 
-<p>To determine how many items a tuple has, use the len() method:</p>
+<p>To determine how many items a tuple has, use the len() method. Print the number of items in the tuple:</p>
 
-<p>Example
-Print the number of items in the tuple:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-print(len(thistuple))
-</code></pre>
-
-<h1 id="add-items">Add Items</h1>
-
-<p>Once a tuple is created, you cannot add items to it. Tuples are unchangeable.</p>
-
-<p>Example
-You cannot add items to a tuple:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-thistuple[3] = &quot;orange&quot; # This will raise an error
-print(thistuple)
+<pre><code>myTuple = (&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)
+print(len(myTuple))
 </code></pre>
 
 <h1 id="create-tuple-with-one-item">Create Tuple With One Item</h1>
 
-<p>To create a tuple with only one item, you have add a comma after the item, unless Python will not recognize the variable as a tuple.</p>
-
-<p>Example
+<p>To create a tuple with only one item, you have add a comma after the item, unless Python will not recognize the variable as a tuple.
 One item tuple, remember the commma:</p>
 
-<pre><code>thistuple = (&quot;apple&quot;,)
-print(type(thistuple))
+<pre><code>myTuple = (&quot;SQL&quot;,)
+print(type(myTuple))
 </code></pre>
 
 <h1 id="not-a-tuple">NOT a tuple</h1>
 
-<pre><code>thistuple = (&quot;apple&quot;)
-print(type(thistuple))
+<pre><code>myTuple = (&quot;SQL&quot;)
+print(type(myTuple))    
 </code></pre>
 
-<h1 id="remove-items">Remove Items</h1>
+<h1 id="joining-two-tuples">Joining Two Tuples</h1>
 
-<p>Note: You cannot remove items in a tuple.</p>
-
-<p>Tuples are unchangeable, so you cannot remove items from it, but you can delete the tuple completely:</p>
-
-<p>Example
-The del keyword can delete the tuple completely:</p>
-
-<pre><code>thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)
-del thistuple
-print(thistuple) #this will raise an error because the tuple no longer exists
-</code></pre>
-
-<h1 id="join-two-tuples">Join Two Tuples</h1>
-
-<p>To join two or more tuples you can use the + operator:</p>
-
-<p>Example
-Join two tuples:</p>
+<p>To join two or more tuples you can use the + operator. Join two tuples:</p>
 
 <pre><code>tuple1 = (&quot;a&quot;, &quot;b&quot; , &quot;c&quot;)
 tuple2 = (1, 2, 3)
@@ -286,20 +265,15 @@ print(tuple3)
 </code></pre>
 
 <p>The tuple() Constructor
-It is also possible to use the tuple() constructor to make a tuple.</p>
+It is also possible to use the tuple() constructor to make a tuple. Using the tuple() method to make a tuple:</p>
 
-<p>Example
-Using the tuple() method to make a tuple:</p>
-
-<pre><code>thistuple = tuple((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)) # note the double round-brackets
-print(thistuple)
+<pre><code>myTuple = tuple((&quot;SQL&quot;, &quot;Python&quot;, &quot;R&quot;)) # note the double round-brackets
+print(myTuple)
 </code></pre>
 
 <h1 id="tuple-methods">Tuple Methods</h1>
 
-<p>Python has two built-in methods that you can use on tuples.</p>
-
-<p>Method  Description
+<p>Python has two built-in methods that you can use on tuples.
 count() Returns the number of times a specified value occurs in a tuple
 index() Searches the tuple for a specified value and returns the position of where it was found</p>
 </article>
@@ -327,19 +301,24 @@ index() Searches the tuple for a specified value and returns the position of whe
     <nav id="TableOfContents">
 <ul>
 <li><a href="#python-tuples">Python Tuples</a></li>
-<li><a href="#access-tuple-items">Access Tuple Items</a></li>
+<li><a href="#accessing-tuple-elements">Accessing Tuple Elements</a>
+<ul>
+<li><a href="#indexing">Indexing</a></li>
 <li><a href="#negative-indexing">Negative Indexing</a></li>
 <li><a href="#range-of-indexes">Range of Indexes</a></li>
 <li><a href="#range-of-negative-indexes">Range of Negative Indexes</a></li>
-<li><a href="#change-tuple-values">Change Tuple Values</a></li>
-<li><a href="#loop-through-a-tuple">Loop Through a Tuple</a></li>
+</ul></li>
+<li><a href="#modifying-tuples">Modifying Tuples</a>
+<ul>
+<li><a href="#adding-elements-to-a-tuple">Adding Elements to a Tuple</a></li>
+<li><a href="#removing-elements-from-a-tuple">Removing Elements from a Tuple</a></li>
+<li><a href="#looping-through-a-tuple">Looping Through a Tuple</a></li>
+</ul></li>
 <li><a href="#check-if-item-exists">Check if Item Exists</a></li>
 <li><a href="#tuple-length">Tuple Length</a></li>
-<li><a href="#add-items">Add Items</a></li>
 <li><a href="#create-tuple-with-one-item">Create Tuple With One Item</a></li>
 <li><a href="#not-a-tuple">NOT a tuple</a></li>
-<li><a href="#remove-items">Remove Items</a></li>
-<li><a href="#join-two-tuples">Join Two Tuples</a></li>
+<li><a href="#joining-two-tuples">Joining Two Tuples</a></li>
 <li><a href="#tuple-methods">Tuple Methods</a></li>
 </ul>
 </nav>

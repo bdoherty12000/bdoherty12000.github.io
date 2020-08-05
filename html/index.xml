@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UpLrn</title>
+    <link>https://www.uplrn.com/html/</link>
+    <description>Recent content on UpLrn</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://www.uplrn.com/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introduction to HTML</title>
+      <link>https://www.uplrn.com/html/introduction-to-html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.uplrn.com/html/introduction-to-html/</guid>
+      <description>Introduction What can HTML do?  Python can be used on a server to create web applications. Python can be used alongside software to create workflows. Python can connect to database systems. It can also read and modify files. Python can be used to handle big data and perform complex mathematics. Python can be used for rapid prototyping, or for production-ready software development.  HTML Python is a simple language with straightforward syntax.</description>
+    </item>
+    
+  </channel>
+</rss>

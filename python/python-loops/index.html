@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introduction to Python | UpLrn</title>
+<title>Loops in Python | UpLrn</title>
 
 
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
@@ -64,7 +64,7 @@ if (!doNotTrack) {
   
 
   <style>
-  nav ul a[href$="\2fpython\2fpython-get-started\2f "] {
+  nav ul a[href$="\2fpython\2fpython-loops\2f "] {
       color: #004ed0;
   }
   </style>
@@ -132,69 +132,73 @@ if (!doNotTrack) {
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Introduction to Python</strong>
+  <strong>Loops in Python</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="loops-in-python">Loops in Python</h1>
 
-<h2 id="python">Python</h2>
+<p>Python provides two ways of looping:</p>
 
-<p>Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3.
-This tutorial uses Python 3 because it is the most up-to-date and supports newer features.
-For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not
-a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be
-invoked with parentheses and also includes a newline, unlike in C. To print a string in Python 3, just write:</p>
+<ul>
+<li>while loops</li>
+<li>for loops</li>
+</ul>
 
-<pre><code>print(&quot;Hello World&quot;)
+<h2 id="while-loops">While Loops</h2>
+
+<pre><code>i = 1
+while i &lt; 6:
+    print(i)
+    i += 1
 </code></pre>
 
-<h2 id="indentation">Indentation</h2>
+<h2 id="the-break-statement">The Break Statement</h2>
 
-<p>Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard
-indentation requires standard Python code to use four spaces. For example:</p>
-
-<pre><code>x = 1
-if x == 1:      
-    print(&quot;x is 1.&quot;) # indented four spaces
+<pre><code>i = 1
+while i &lt; 6:
+    print(i)
+    if i == 3:
+        break
+i += 1
 </code></pre>
 
-<h2 id="comments">Comments</h2>
+<h2 id="the-continue-statement">The Continue Statement</h2>
 
-<p>Comments provides useful information to help the reader understand source code. Comments are
-helpful to someone maintaining or enhancing your code when you are no longer around to answer questions about it.<br />
-There are two types of comment in Python:</p>
-
-<h3 id="single-line-comments">Single line comments</h3>
-
-<p>The hash symbol # comments out a single line. Single line comments start with a hashtag symbol with
-no white spaces (#) and last until the end of the line. If the comment exceeds one line then a hashtag is needed on the
-next line to continue the comment. Single line comments are useful for providing short explanations for variables,
-function declarations, and expressions. The code snippet demonstrates a single line comment:</p>
-
-<pre><code># This is a comment 
-# Print “The Data Faculty !” to the console 
-print(&quot;The Data Faculty !&quot;) 
+<pre><code>i = 0
+while i &lt; 6:
+    i += 1
+    if i == 3:
+        continue
+    print(i)
 </code></pre>
 
-<h3 id="multi-line-comments">Multi-line comments</h3>
+<h2 id="the-else-statement">The Else Statement</h2>
 
-<p>Python multi-line comments are a piece of text enclosed in a delimiter (&ldquo;&rdquo;&ldquo;) on each end of the comment. Again there should be no
-white space between delimiter (&ldquo;&rdquo;&ldquo;). They are useful when the comment text does not fit into one line and needs to span across
-lines. See the following code snippet demonstrating a multi-line comment:</p>
+<pre><code>i = 1
+while i &lt; 6:
+    print(i)
+    i += 1
+else:
+    print(&quot;i is no longer less than 6&quot;)
+</code></pre>
 
-<pre><code>&quot;&quot;&quot; 
-This is a multiline comment in Python that 
-spans several lines. A Computer Science portal for geeks. 
-It contains well written, well thought 
-and well-explained computer science 
-and programming articles, 
-quizzes and more. 
-… 
-&quot;&quot;&quot;
-print(&quot;The Data Faculty&quot;) 
+<h1 id="for-loops">For Loops</h1>
+
+<pre><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+for x in fruits:
+    print(x)
+</code></pre>
+
+<h2 id="the-break-statement-1">The break Statement</h2>
+
+<pre><code>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+for x in fruits:
+    print(x)
+    if x == &quot;banana&quot;:
+        break
 </code></pre>
 </article>
 
@@ -203,7 +207,7 @@ print(&quot;The Data Faculty&quot;)
   
   
   <div>
-    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/python%5cpython-get-started.md" target="_blank" rel="noopener">
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/python%5cpython-loops.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -220,15 +224,16 @@ print(&quot;The Data Faculty&quot;)
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#introduction">Introduction</a>
+<li><a href="#loops-in-python">Loops in Python</a>
 <ul>
-<li><a href="#python">Python</a></li>
-<li><a href="#indentation">Indentation</a></li>
-<li><a href="#comments">Comments</a>
-<ul>
-<li><a href="#single-line-comments">Single line comments</a></li>
-<li><a href="#multi-line-comments">Multi-line comments</a></li>
+<li><a href="#while-loops">While Loops</a></li>
+<li><a href="#the-break-statement">The Break Statement</a></li>
+<li><a href="#the-continue-statement">The Continue Statement</a></li>
+<li><a href="#the-else-statement">The Else Statement</a></li>
 </ul></li>
+<li><a href="#for-loops">For Loops</a>
+<ul>
+<li><a href="#the-break-statement-1">The break Statement</a></li>
 </ul></li>
 </ul>
 </nav>

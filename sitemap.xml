@@ -3,93 +3,143 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.thedatafaculty.com/posts/creating-a-new-theme/</loc>
+    <loc>https://www.uplrn.com/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/posts/migrate-from-jekyll/</loc>
+    <loc>https://www.uplrn.com/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/posts/</loc>
+    <loc>https://www.uplrn.com/posts/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/posts/goisforlovers/</loc>
+    <loc>https://www.uplrn.com/posts/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/posts/hugoisforlovers/</loc>
+    <loc>https://www.uplrn.com/posts/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/about/</loc>
+    <loc>https://www.uplrn.com/sql/sql-logical-operators/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/introduction-to-python/</loc>
+    <loc>https://www.uplrn.com/sql/sql-where/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-get-started/</loc>
+    <loc>https://www.uplrn.com/about/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-dictionaries/</loc>
+    <loc>https://www.uplrn.com/html/introduction-to-html/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-functions/</loc>
+    <loc>https://www.uplrn.com/python/introduction-to-python/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-numbers/</loc>
+    <loc>https://www.uplrn.com/python/python-get-started/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-syntax/</loc>
+    <loc>https://www.uplrn.com/sql/introduction-to-sql/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-lists/</loc>
+    <loc>https://www.uplrn.com/python/python-loops/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-numpy/</loc>
+    <loc>https://www.uplrn.com/python/python-numpy/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-tuples/</loc>
+    <loc>https://www.uplrn.com/python/python-operators/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/</loc>
+    <loc>https://www.uplrn.com/python/python-dictionaries/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/python/python-functions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/python/python-lists/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/python/python-numbers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/python/python-syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/python/python-tuples/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/sql/sql-delete/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/sql/sql-select/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/sql/sql-casting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/sql/sql-control-flow/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/sql/sql-strings/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/sql/sql-update/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/R/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.uplrn.com/</loc>
     <lastmod>2019-08-21T21:52:58+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/</loc>
+    <loc>https://www.uplrn.com/html/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/SQL/</loc>
+    <loc>https://www.uplrn.com/python/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-loop/</loc>
+    <loc>https://www.uplrn.com/sql/</loc>
   </url>
   
   <url>
-    <loc>https://www.thedatafaculty.com/python/python-operators/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.thedatafaculty.com/python/python-variables-types/</loc>
+    <loc>https://www.uplrn.com/python/python-variables-types/</loc>
   </url>
   
 </urlset>

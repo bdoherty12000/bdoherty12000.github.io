@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL Update | UpLrn</title>
+
+
+<link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
+
+
+<script defer src="/search.min.d01da900db06deed42e25708c66bc175e0aef4bf7023376919e764ebcdf5df5e.js"></script>
+
+
+
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+   
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-145397309-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="https://www.uplrn.com">UpLrn</a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" placeholder="Search" id="book-search-input" maxlength="64" readonly />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2fsql\2fsql-strings\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/python/">Python</a>
+
+<ul>
+<li><a href="/python/introduction-to-python">Introduction</a></li>
+<li><a href="/python/python-variables-types">Variables and Types</a></li>
+<li><a href="/python/python-numbers">Numbers</a></li>
+<li><a href="/python/python-lists">Lists</a></li>
+<li><a href="/python/python-tuples">Tuples</a></li>
+<li><a href="/python/python-dictionaries">Dictionaries</a></li>
+<li><a href="/python/python-operators">Operators</a></li>
+<li><a href="/python/python-loops">Loops</a></li>
+<li><a href="/python/python-numpy">Numpy</a></li>
+<li><a href="/python/python-functions">Functions</a></li>
+</ul></li>
+<li><a href="/html/">HTML</a>
+
+<ul>
+<li><a href="/html/introduction-to-html">Introduction</a></li>
+</ul></li>
+<li><a href="/sql/">SQL</a>
+
+<ul>
+<li><a href="/sql/introduction-to-sql">Introduction</a></li>
+<li><a href="/sql/sql-select">Select</a></li>
+<li><a href="/sql/sql-update">Update</a></li>
+<li><a href="/sql/sql-delete">Delete</a></li>
+</ul></li>
+<li><a href="/R/">R</a>
+
+<ul>
+<li><a href="/R/">Get Started</a></li>
+</ul></li>
+<li><a href="/about">About</a></li>
+<li><a href="/posts">Blog</a></li>
+</ul>
+
+
+
+
+
+
+
+</nav>
+
+
+<script>
+(function() {
+  var menu = document.querySelector("aside.book-menu nav");
+  addEventListener("beforeunload", function(event) {
+    localStorage.setItem("menu.scrollTop", menu.scrollTop);
+  });
+  menu.scrollTop = localStorage.getItem("menu.scrollTop");
+})();
+</script>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="flex align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>SQL Update</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="lesson-87">Lesson 87</h1>
+
+<h1 id="account-transfer-problem">Account Transfer Problem</h1>
+
+<p>use test;</p>
+
+<p>create table accounts(id int primary key auto_increment, balance numeric(10, 2), default 0);</p>
+
+<p>insert into accounts(balance) values (1000.00);
+insert into accounts(balance) values (1000.00);</p>
+
+<p>select * from accounts;</p>
+
+<p>set @transfer = 200.00;</p>
+
+<h1 id="transaction-makes-statements-atomic-all-or-none-succeed">Transaction makes statements atomic - all or none succeed.</h1>
+
+<h1 id="until-commit-no-updates-will-occur-single-atomic-block-even-if-application-closes">Until commit no updates will occur - single atomic block - even if application closes.</h1>
+
+<p>start transaction;
+update accounts set balance = balance - @transfer where id = 1;
+update accounts set balance = balance + @transfer where id = 2;
+commit;</p>
+
+<p>select * from accounts;</p>
+
+<h1 id="lesson-88">Lesson 88</h1>
+
+<h1 id="multiple-sessions-and-their-impact-on-account-problem">Multiple sessions and their impact on account problem</h1>
+
+<p>&ndash; database to use
+use test;</p>
+
+<p>select * from accounts;</p>
+
+<p>start transaction;
+set @withdraw = 500;
+set @account = 1;</p>
+
+<p>&ndash; for update works by selecting for update so no one else read please
+select balance from accounts where id=@account for update;</p>
+
+<p>&ndash; Check that the balance is bigger than the withdrawal amount
+&ndash; transaction prevents update of same row at the same time by another user/app/session
+&ndash; we need a write lock to fix - (table lock, isolation level set to serializable(index on id) - not 1st choice)
+update accounts set balance = balance - @withdraw where id = @account;
+commit;</p>
+
+<p>update accounts set balance = 800 where id=1;</p>
+
+<h1 id="lesson-89-row-locking-in-share-mode">Lesson 89 - Row locking in share mode</h1>
+
+<p>&ndash; ISO Engine INNO DB
+&ndash; Foreign key restraint
+&ndash; Make sure to add index to name column to prevent entire table being locked</p>
+
+<p>use test;</p>
+
+<p>show tables;</p>
+
+<p>select * from books;
+select * from libraries;</p>
+
+<p>start transaction;
+select id from libraries where name=&ldquo;Nottingham&rdquo; lock in share mode; &ndash; read lock
+insert into books (title, library_id) values (&ldquo;Painting for Beginners&rdquo;, 2);
+commit;</p>
+
+<p>delete from libraries where id = 2;</p>
+
+<h1 id="lession-90">Lession 90</h1>
+
+<p>String functions
+CONCAT
+use test;</p>
+
+<p>show tables;</p>
+
+<p>select * from books;</p>
+
+<p>select CONCAT(&ldquo;Title: &ldquo;, title) from books;</p>
+
+<p>SELECT CONCAT(&lsquo;My&rsquo;, &lsquo; &lsquo;, &lsquo;name is&rsquo;, &lsquo; &lsquo;, &lsquo;John&rsquo;);</p>
+
+<p>SELECT ucase(&lsquo;Fred&rsquo;);</p>
+
+<p>SELECT lcase(&lsquo;Fred&rsquo;);</p>
+</article>
+
+      
+<div class="book-footer justify-end">
+  
+  
+  <div>
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/sql%5csql-strings.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" alt="Edit" /> Edit this page
+    </a>
+  </div>
+  
+</div>
+
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-3 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#lesson-87">Lesson 87</a></li>
+<li><a href="#account-transfer-problem">Account Transfer Problem</a></li>
+<li><a href="#transaction-makes-statements-atomic-all-or-none-succeed">Transaction makes statements atomic - all or none succeed.</a></li>
+<li><a href="#until-commit-no-updates-will-occur-single-atomic-block-even-if-application-closes">Until commit no updates will occur - single atomic block - even if application closes.</a></li>
+<li><a href="#lesson-88">Lesson 88</a></li>
+<li><a href="#multiple-sessions-and-their-impact-on-account-problem">Multiple sessions and their impact on account problem</a></li>
+<li><a href="#lesson-89-row-locking-in-share-mode">Lesson 89 - Row locking in share mode</a></li>
+<li><a href="#lession-90">Lession 90</a></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+  
+ 
+</body>
+
+</html>

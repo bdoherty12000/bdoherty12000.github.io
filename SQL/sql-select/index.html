@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introduction to Python | UpLrn</title>
+<title>SQL Select | UpLrn</title>
 
 
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
@@ -64,7 +64,7 @@ if (!doNotTrack) {
   
 
   <style>
-  nav ul a[href$="\2fpython\2fpython-get-started\2f "] {
+  nav ul a[href$="\2fsql\2fsql-select\2f "] {
       color: #004ed0;
   }
   </style>
@@ -132,70 +132,98 @@ if (!doNotTrack) {
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Introduction to Python</strong>
+  <strong>SQL Select</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="the-sql-select-statement">The SQL SELECT Statement</h1>
 
-<h2 id="python">Python</h2>
+<p>The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.</p>
 
-<p>Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3.
-This tutorial uses Python 3 because it is the most up-to-date and supports newer features.
-For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not
-a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be
-invoked with parentheses and also includes a newline, unlike in C. To print a string in Python 3, just write:</p>
-
-<pre><code>print(&quot;Hello World&quot;)
+<pre><code>SELECT column1, column2
+FROM tableName;
 </code></pre>
 
-<h2 id="indentation">Indentation</h2>
+<p>Here, column1 and column2 are the field names of the table you are selecting data from. If you want to select
+all the fields in the table, use the following syntax:</p>
 
-<p>Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard
-indentation requires standard Python code to use four spaces. For example:</p>
-
-<pre><code>x = 1
-if x == 1:      
-    print(&quot;x is 1.&quot;) # indented four spaces
+<pre><code>SELECT * FROM tableName;
 </code></pre>
 
-<h2 id="comments">Comments</h2>
+<p>Demo Database
+Below is a selection from the &ldquo;Customers&rdquo; table in the Northwind sample database:
+<table>
+<tr>
+    <th>ID</th>
+    <th>CustomerName</th><br />
+    <th>ContactName</th><br />
+    <th>Address</th><br />
+    <th>City</th><br />
+    <th>PostalCode</th>
+    <th>Country</th>
+</tr>
+<tr>
+   <td>1</td>   <td>Alfreds Futterkiste Maria Anders</td>   Obere Str. 57   Berlin  12209   Germany</p>
 
-<p>Comments provides useful information to help the reader understand source code. Comments are
-helpful to someone maintaining or enhancing your code when you are no longer around to answer questions about it.<br />
-There are two types of comment in Python:</p>
+<p></tr>
+<tr>
+   <td>
+2   Ana Trujillo Emparedados y helados  Ana Trujillo    Avda. de la Constitución 2222   México D.F. 05021   Mexico
+    </td>
+</tr></p>
 
-<h3 id="single-line-comments">Single line comments</h3>
+<p><tr>
+   <td>
+    3   Antonio Moreno Taquería Antonio Moreno  Mataderos 2312  México D.F. 05023   Mexico
+   </td>
+</tr></p>
 
-<p>The hash symbol # comments out a single line. Single line comments start with a hashtag symbol with
-no white spaces (#) and last until the end of the line. If the comment exceeds one line then a hashtag is needed on the
-next line to continue the comment. Single line comments are useful for providing short explanations for variables,
-function declarations, and expressions. The code snippet demonstrates a single line comment:</p>
+<p><tr>
+   <td>
+    4   Around the Horn Thomas Hardy    120 Hanover Sq. London  WA1 1DP UK
+    </td>
+</tr></p>
 
-<pre><code># This is a comment 
-# Print “The Data Faculty !” to the console 
-print(&quot;The Data Faculty !&quot;) 
-</code></pre>
+<p><tr>
+   <td>
+    5   Berglunds snabbköp  Christina Berglund  Berguvsvägen 8  Luleå   S-958 22    Sweden
+    </td>
+</tr></p>
 
-<h3 id="multi-line-comments">Multi-line comments</h3>
+<p></table></p>
 
-<p>Python multi-line comments are a piece of text enclosed in a delimiter (&ldquo;&rdquo;&ldquo;) on each end of the comment. Again there should be no
-white space between delimiter (&ldquo;&rdquo;&ldquo;). They are useful when the comment text does not fit into one line and needs to span across
-lines. See the following code snippet demonstrating a multi-line comment:</p>
+<p>SELECT Column Example
+The following SQL statement selects the &ldquo;CustomerName&rdquo; and &ldquo;City&rdquo; columns from the &ldquo;Customers&rdquo; table:</p>
 
-<pre><code>&quot;&quot;&quot; 
-This is a multiline comment in Python that 
-spans several lines. A Computer Science portal for geeks. 
-It contains well written, well thought 
-and well-explained computer science 
-and programming articles, 
-quizzes and more. 
-… 
-&quot;&quot;&quot;
-print(&quot;The Data Faculty&quot;) 
-</code></pre>
+<p>Example
+SELECT CustomerName, City FROM Customers;
+SELECT * Example
+The following SQL statement selects all the columns from the &ldquo;Customers&rdquo; table:</p>
+
+<p>Example
+SELECT * FROM Customers;</p>
+
+<p>The SQL SELECT DISTINCT Statement
+The SELECT DISTINCT statement is used to return only distinct (different) values.</p>
+
+<p>Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.</p>
+
+<p>SELECT DISTINCT Syntax
+SELECT DISTINCT column1, column2, &hellip;
+FROM table_name;</p>
+
+<p>SELECT Example Without DISTINCT
+The following SQL statement selects ALL (including the duplicates) values from the &ldquo;Country&rdquo; column in the &ldquo;Customers&rdquo; table:</p>
+
+<p>Example
+SELECT Country FROM Customers;</p>
+
+<p>The following SQL statement lists the number of different (distinct) customer countries:</p>
+
+<p>Example
+SELECT COUNT(DISTINCT Country) FROM Customers;</p>
 </article>
 
       
@@ -203,7 +231,7 @@ print(&quot;The Data Faculty&quot;)
   
   
   <div>
-    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/python%5cpython-get-started.md" target="_blank" rel="noopener">
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/sql%5csql-select.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -220,16 +248,7 @@ print(&quot;The Data Faculty&quot;)
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#introduction">Introduction</a>
-<ul>
-<li><a href="#python">Python</a></li>
-<li><a href="#indentation">Indentation</a></li>
-<li><a href="#comments">Comments</a>
-<ul>
-<li><a href="#single-line-comments">Single line comments</a></li>
-<li><a href="#multi-line-comments">Multi-line comments</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#the-sql-select-statement">The SQL SELECT Statement</a></li>
 </ul>
 </nav>
   </aside>

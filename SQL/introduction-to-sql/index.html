@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Introduction to Python | UpLrn</title>
+<title>Introduction to SQL | UpLrn</title>
 
 
 <link rel="stylesheet" href="/book.min.6c7317d2e8552a0ac3ea8fd4ba500c3dfb1cc9c74e7afd73eee6d729751fad30.css">
@@ -64,7 +64,7 @@ if (!doNotTrack) {
   
 
   <style>
-  nav ul a[href$="\2fpython\2fpython-get-started\2f "] {
+  nav ul a[href$="\2fsql\2fintroduction-to-sql\2f "] {
       color: #004ed0;
   }
   </style>
@@ -132,70 +132,66 @@ if (!doNotTrack) {
   <label for="menu-control">
     <img src="/svg/menu.svg" alt="Menu" />
   </label>
-  <strong>Introduction to Python</strong>
+  <strong>Introduction to SQL</strong>
 </header>
 
       
 <article class="markdown">
 
-<h1 id="introduction">Introduction</h1>
+<p>SQL is a standard language for accessing and manipulating databases.</p>
 
-<h2 id="python">Python</h2>
+<h1 id="what-is-sql">What is SQL?</h1>
 
-<p>Python is a simple language with straightforward syntax. There are two major Python versions; Python 2 and Python 3.
-This tutorial uses Python 3 because it is the most up-to-date and supports newer features.
-For example, one difference between Python 2 and 3 is the print statement. In Python 2, the “print” statement is not
-a function, and therefore it is invoked without parentheses. However, in Python 3, it is a function and must be
-invoked with parentheses and also includes a newline, unlike in C. To print a string in Python 3, just write:</p>
+<p>SQL stands for Structured Query Language
+SQL lets you access and manipulate databases
+SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO)
+in 1987</p>
 
-<pre><code>print(&quot;Hello World&quot;)
-</code></pre>
+<h1 id="what-can-sql-do">What Can SQL do?</h1>
 
-<h2 id="indentation">Indentation</h2>
+<p>SQL can execute queries against a database
+SQL can retrieve data from a database
+SQL can insert records in a database
+SQL can update records in a database
+SQL can delete records from a database
+SQL can create new databases
+SQL can create new tables in a database
+SQL can create stored procedures in a database
+SQL can create views in a database
+SQL can set permissions on tables, procedures, and views
+SQL is a Standard - BUT&hellip;.
+Although SQL is an ANSI/ISO standard, there are different versions of the SQL language.</p>
 
-<p>Python uses indentation for blocks, instead of curly braces. Both tabs and spaces are supported, but the standard
-indentation requires standard Python code to use four spaces. For example:</p>
+<p>However, to be compliant with the ANSI standard, they all support at least the major commands (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner.</p>
 
-<pre><code>x = 1
-if x == 1:      
-    print(&quot;x is 1.&quot;) # indented four spaces
-</code></pre>
+<p>Note: Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard!</p>
 
-<h2 id="comments">Comments</h2>
+<h1 id="using-sql-in-your-web-site">Using SQL in Your Web Site</h1>
 
-<p>Comments provides useful information to help the reader understand source code. Comments are
-helpful to someone maintaining or enhancing your code when you are no longer around to answer questions about it.<br />
-There are two types of comment in Python:</p>
+<p>To build a web site that shows data from a database, you will need:</p>
 
-<h3 id="single-line-comments">Single line comments</h3>
+<p>An RDBMS database program (i.e. MS Access, SQL Server, MySQL)
+To use a server-side scripting language, like PHP or ASP
+To use SQL to get the data you want
+To use HTML / CSS to style the page</p>
 
-<p>The hash symbol # comments out a single line. Single line comments start with a hashtag symbol with
-no white spaces (#) and last until the end of the line. If the comment exceeds one line then a hashtag is needed on the
-next line to continue the comment. Single line comments are useful for providing short explanations for variables,
-function declarations, and expressions. The code snippet demonstrates a single line comment:</p>
+<h1 id="rdbms">RDBMS</h1>
 
-<pre><code># This is a comment 
-# Print “The Data Faculty !” to the console 
-print(&quot;The Data Faculty !&quot;) 
-</code></pre>
+<p>RDBMS stands for Relational Database Management System.</p>
 
-<h3 id="multi-line-comments">Multi-line comments</h3>
+<p>RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.</p>
 
-<p>Python multi-line comments are a piece of text enclosed in a delimiter (&ldquo;&rdquo;&ldquo;) on each end of the comment. Again there should be no
-white space between delimiter (&ldquo;&rdquo;&ldquo;). They are useful when the comment text does not fit into one line and needs to span across
-lines. See the following code snippet demonstrating a multi-line comment:</p>
+<p>The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.</p>
 
-<pre><code>&quot;&quot;&quot; 
-This is a multiline comment in Python that 
-spans several lines. A Computer Science portal for geeks. 
-It contains well written, well thought 
-and well-explained computer science 
-and programming articles, 
-quizzes and more. 
-… 
-&quot;&quot;&quot;
-print(&quot;The Data Faculty&quot;) 
-</code></pre>
+<p>Look at the &ldquo;Customers&rdquo; table:</p>
+
+<p>SELECT * FROM Customers;</p>
+
+<p>Every table is broken up into smaller entities called fields. The fields in the Customers table consist of CustomerID, CustomerName, ContactName, Address, City, PostalCode and Country. A field is a column in a table that is designed to maintain specific information about every record in the table.</p>
+
+<p>A record, also called a row, is each individual entry that exists in a table. For example, there are 91 records in the above Customers table. A record is a horizontal entity in a table.</p>
+
+<p>A column is a vertical entity in a table that contains all information associated with a specific field in a table.</p>
 </article>
 
       
@@ -203,7 +199,7 @@ print(&quot;The Data Faculty&quot;)
   
   
   <div>
-    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/python%5cpython-get-started.md" target="_blank" rel="noopener">
+    <a href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite/content/sql%5cintroduction-to-sql.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" alt="Edit" /> Edit this page
     </a>
   </div>
@@ -220,16 +216,10 @@ print(&quot;The Data Faculty&quot;)
   <aside class="book-toc level-3 fixed">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#introduction">Introduction</a>
-<ul>
-<li><a href="#python">Python</a></li>
-<li><a href="#indentation">Indentation</a></li>
-<li><a href="#comments">Comments</a>
-<ul>
-<li><a href="#single-line-comments">Single line comments</a></li>
-<li><a href="#multi-line-comments">Multi-line comments</a></li>
-</ul></li>
-</ul></li>
+<li><a href="#what-is-sql">What is SQL?</a></li>
+<li><a href="#what-can-sql-do">What Can SQL do?</a></li>
+<li><a href="#using-sql-in-your-web-site">Using SQL in Your Web Site</a></li>
+<li><a href="#rdbms">RDBMS</a></li>
 </ul>
 </nav>
   </aside>

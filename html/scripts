@@ -1,0 +1,112 @@
+A script is a small program that can add interactivity to a website. For example, a script could generate 
+a pop-up alert box message, or provide a dropdown menu. Now-a-days, only JavaScript and associated frameworks 
+are being used by most of the web developers, VBScript is not even supported by various major browsers.
+Functions known as event handlers can be triggered using HTML attributes. JavaScript code can be kept in a 
+separate file and included where needed, or it can be defined inside the HTML document itself. 
+We will consider both cases.
+
+External JavaScript
+If you are going to use functionality in several HTML documents it's better to maintain it in a separate JavaScript 
+file and then include it in your HTML documents. JavaScript files have a .js extension and are included in HTML 
+files using the <script> tag.
+
+Example
+Consider a Javascript function in script.js which has following code
+
+function Hello() {
+   alert("Hello, World");
+}
+
+Now let's make use of the above external JavaScript file in a HTML document.
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Javascript External Script</title>
+      <script src = "/html/script.js" type = "text/javascript"/></script>
+   </head>
+
+   <body>
+      <input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" />
+   </body>
+</html>
+
+This will produce the following result, where you can try to click on the given button −
+
+Internal Script
+Script code can be written directly into a HTML document. It is usually put in the header of the 
+HTML document using the <script> tag,but can be put into your source code anywhere in the document 
+inside a <script> tag.
+
+Example
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>JavaScript Internal Script</title>
+      <base href = "https://www.tutorialspoint.com/" />
+      
+      <script type = "text/JavaScript">
+         function Hello() {
+            alert("Hello, World");
+         }
+      </script>
+   </head>
+
+   <body>
+      <input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" />
+   </body>
+</html>
+
+This will produce the following result, where you can try to click on the given button −
+
+Event Handlers
+Event handlers are functions that are called in response to a mouse or keyboard event. 
+The following example explains how to write an event handler.  This function will be called
+when a user moves a mouse over a paragraph.
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Event Handlers Example</title>
+      <base href = "https://www.tutorialspoint.com/" />
+      
+      <script type = "text/JavaScript">
+         function EventHandler() {
+            alert("I'm event handler!!");
+         }
+      </script>
+   </head>
+   <body>
+      <p onmouseover = "EventHandler();">Bring your mouse here to see an alert</p>
+   </body>
+</html>
+Now This will produce the following result. Bring your mouse over this line and see the result −
+
+
+Hide Scripts from Older Browsers
+You can provide alternative info to users whose browsers don't support scripts or for those users who 
+have disabled the script option in their browsers using the <noscript> tag.
+
+JavaScript Example:
+<script type = "text/JavaScript">
+   <!--
+      document.write("Hello JavaScript!");
+   //-->
+</script>
+
+<noscript>Your browser does not support JavaScript!</noscript>
+
+Default Scripting Language
+In some cases, a webpage may include multiple script files and and use multiple <script> tags. It's possible to define a default scripting language for all script tags which saves you from specifying the language every time you use a script tag. For example:
+
+<meta http-equiv = "Content-Script-Type" content = "text/JavaScript" />
+
+Its still possible to override the default script language by specifying a language within the script tag.
+
+
+
+
+
+
+
+
